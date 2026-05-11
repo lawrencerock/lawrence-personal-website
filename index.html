@@ -20,6 +20,77 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <!-- Popup Ad -->
+<div id="popupAd" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+">
+
+    <!-- Ad Box -->
+    <div style="
+    position:relative;
+    width:90%;
+    max-width:400px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    ">
+
+        <!-- Close Button -->
+        <button onclick="document.getElementById('popupAd').style.display='none'" style="
+        position:absolute;
+        top:10px;
+        right:10px;
+        width:32px;
+        height:32px;
+        border:none;
+        border-radius:50%;
+        background:red;
+        color:white;
+        font-size:20px;
+        cursor:pointer;
+        ">
+        ×
+        </button>
+
+        <!-- Ad Image -->
+        <img 
+        src="https://your-image-link.com/ad.jpg"
+        style="width:100%;display:block;"
+        alt="Ad">
+
+        <!-- Content -->
+        <div style="padding:20px;text-align:center;">
+
+            <h2>Special Offer</h2>
+
+            <p>Your advertisement text here.</p>
+
+            <a href="https://yourwebsite.com" style="
+            display:inline-block;
+            margin-top:10px;
+            padding:12px 25px;
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            ">
+            Visit Now
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
 
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
